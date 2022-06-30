@@ -1,142 +1,140 @@
-@charset "UTF-8";
-/* Обнуление */
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body
+{
+  background-color:#f5f5f5;
 }
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
-body {
-  font-family: "Nunito";
-  font-size: 16px;
-}
-
-.content {
-  width: 1440px;
-}
-
 .registerform {
   width: 800px;
-  height: 520px;
+  height: 630px;
   border: 1px solid #EBEEF7;
+  border-radius: 10px;
+}
+.headclas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 16px 20px 0px 32px;
+    justify-content: center;
+}
+.span1 {
+  font-style: "Nunito";
+  font-weight: 600;
+  font-size: 100%;
+  line-height: 150%;
+  color: #191f33;
+  padding-top: 5px;
+  padding-left: 16px;
 }
 
-.title {
-  margin-top: 50px;
+.span2 {
+  font-style: "Nunito";
+  font-weight: 400;
+  font-size: 87%;
+  line-height: 150%;
+  color: #767e94;
+  padding-left: 16px;
 }
-
-.name {
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #EBEEF7;
+  /* background-color: #191f33; */
+  margin: 13px auto;
+}
+.signame {
   text-align: center;
-  margin: 0 0px 30px 0;
+  margin: 0 0px 20px 0;
 }
-
-.signgoog {
-  margin: 30px 0px;
+.adname {
+  margin-left: 32px;
+  margin-bottom: 5px;
+  font-size: 87%;
+  line-height: 20px;
+  color: #191f33;
 }
-
-.signgoog span {
-  margin: 0 0 0 -20px;
-  color: #415686;
-}
-
 .placetext {
   color: #415686;
+  margin-bottom: 10px;
 }
-
-.btnsignin {
-  color: #000;
-  cursor: pointer;
+.your {
+  font-size: 100%;
+  margin-left: 18px;
+  line-height: 24px;
+  color: #939aad;
+  font-weight: 400;
 }
-
-.btnsub {
-  margin: 20px auto;
-  font-size: 16px;
+.desr {
+  
 }
-
-.imagePreview {
-  width: 100%;
-  height: 180px;
-  background: url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: inline-block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px -3px 6px 2px rgba(0, 0, 0, 0.2);
+.textr {
+  /* width: 80%; */
+  margin: 0px auto;
 }
-
-.btn-primary {
+.desr span {
   display: block;
-  font-size: 16px;
-  border-radius: 0px;
-  -webkit-box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.2);
-  margin-top: -5px;
+  margin-left: 16px;
+  margin-bottom: 5px;
+  font-size: 87%;
+  line-height: 20px;
+  color: #191f33;
 }
-
-.imgUp {
-  margin-bottom: 20px;
+.imagePreview {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* background-position: center center; */
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  display:inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.imgupblock {
+  display: flex;
+}
+.btn-primary
+{
+  display:block;
+  font-size: 100%;
+  font-family: inherit;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+}
+.imgUp
+{
   width: 180px;
+  margin: 0px 0px 20px 16px;
 }
-
-.del {
-  position: absolute;
-  top: 0px;
-  right: -65px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 30px;
-  background-color: rgba(191, 19, 19, 0.6);
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:center;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+.imgAdd
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
-
-.btntext {
-  font-size: 16px;
+.btn0 {
+  display: flex;
+  justify-content: end;
 }
-
-.imgAdd {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #0d6efd;
-  color: #fff;
-  -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  line-height: 30px;
-  margin-top: 0px;
-  cursor: pointer;
-  font-size: 15px;
+.btnsub {
+  font-family: inherit;
+  letter-spacing: 1px;
+  margin: 0px 32px 16px 0px;
 }
